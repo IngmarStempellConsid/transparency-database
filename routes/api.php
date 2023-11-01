@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-die("Huhu");
 // These are unversioned api routes
 
 //Route::middleware('auth:sanctum')->group(function(){

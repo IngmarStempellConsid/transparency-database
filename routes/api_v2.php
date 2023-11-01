@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-die("Huhu");
+
 //Route::middleware('auth:sanctum')->group(function(){
 //    Route::get('statement/{statement:uuid}', [StatementAPIController::class,'show'])->name('api.v2.statement.show')->can('view statements');
 //    Route::post('statement', [StatementAPIController::class,'store'])->name('api.v2.statement.store')->can('create statements');
