@@ -492,6 +492,7 @@ class Statement extends Model
      */
     public function getPlatformNameAttribute(): string
     {
+        return "Otto";
         return $this->platform->name;
     }
 

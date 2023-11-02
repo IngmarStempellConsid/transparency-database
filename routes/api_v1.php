@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('statement', [StatementAPIController::class,'store']);
 Route::middleware('auth:sanctum')->group(function() {
     Route::get('statement/{statement:uuid}', [StatementAPIController::class,'show'])->name('api.v1.statement.show')->can('view statements');
     Route::get('statement/existing-puid/{puid}', [StatementAPIController::class,'existingPuid'])->name('api.v1.statement.existing-puid')->can('view statements');
-    Route::post('statement', [StatementAPIController::class,'store'])->name('api.v1.statement.store')->can('create statements');
 });
 
