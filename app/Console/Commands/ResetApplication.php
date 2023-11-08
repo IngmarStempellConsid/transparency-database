@@ -40,7 +40,7 @@ class ResetApplication extends Command
             Statement::query()->forceDelete();
             Statement::factory()->count(1000)->create();
             $this->info('Reset has completed.');
-
+/*
             if ($this->confirm('Optimize the opensearch index?', true)) {
                 $this->call('statements:optimize-index');
                 $this->info('Optimize has completed.');
@@ -86,6 +86,7 @@ class ResetApplication extends Command
 
                 $this->info('Day totals has completed.');
             }
+*/
         } else {
             $this->error('Oh hell no!');
             $this->error('We do not run this in production.');
